@@ -1,8 +1,8 @@
-package com.lib.lib.controllers;
+package com.company.controllers;
 
 
-import com.lib.lib.models.Person;
-import com.lib.lib.services.PersonService;
+import com.company.models.Person;
+import com.company.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;

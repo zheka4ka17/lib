@@ -1,7 +1,7 @@
-package com.lib.lib.services;
+package com.company.services;
 
 
-import com.lib.lib.models.Book;
+import com.company.models.Book;
 
 import java.security.Principal;
 import java.util.List;

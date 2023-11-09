@@ -1,9 +1,9 @@
-package com.lib.lib.controllers;
+package com.company.controllers;
 
 
 
-import com.lib.lib.models.Book;
-import com.lib.lib.services.BookService;
+import com.company.models.Book;
+import com.company.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

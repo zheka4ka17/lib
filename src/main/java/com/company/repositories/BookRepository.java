@@ -1,7 +1,7 @@
-package com.lib.lib.repositories;
+package com.company.repositories;
 
 
-import com.lib.lib.models.Book;
+import com.company.models.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

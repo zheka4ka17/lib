@@ -1,10 +1,10 @@
-package com.lib.lib.services;
+package com.company.services;
 
 
-import com.lib.lib.models.Book;
-import com.lib.lib.models.Person;
-import com.lib.lib.repositories.BookRepository;
-import com.lib.lib.repositories.PersonRepository;
+import com.company.models.Book;
+import com.company.models.Person;
+import com.company.repositories.BookRepository;
+import com.company.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

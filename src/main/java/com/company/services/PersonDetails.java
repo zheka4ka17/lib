@@ -1,7 +1,7 @@
-package com.lib.lib.services;
+package com.company.services;
 
 
-import com.lib.lib.models.Person;
+import com.company.models.Person;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

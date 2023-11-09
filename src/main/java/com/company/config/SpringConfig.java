@@ -1,4 +1,4 @@
-package com.lib.lib.config;
+package com.company.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

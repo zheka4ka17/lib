@@ -1,7 +1,7 @@
-package com.lib.lib.services;
+package com.company.services;
 
-import com.lib.lib.repositories.PersonRepository;
-import com.lib.lib.models.Person;
+import com.company.repositories.PersonRepository;
+import com.company.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
