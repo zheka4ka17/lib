@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+            <table>
+                <tr>
+                    <td><a href="/books/all">Все книги</a></td>
+                    <td><a href="books/search">Поиск книг</a></td>
+                    <td sec:authorize="isAuthenticated()"><a th:href="@{/books/available-books}">Свободные книги </a></td>
+                    <td sec:authorize="isAuthenticated()"><a th:href="@{/person/myRoom}">Личный кабинет</a></td>
+                    <td sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Выйти </a></td>
+                    <td sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Войти</a></td>
+                    <td sec:authorize="isAuthenticated()"><a href="books/new">Создать книгу</a></td>
+
+                </tr>
+            </table>
+
+</body>
+</html>

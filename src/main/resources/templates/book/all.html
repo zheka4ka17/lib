@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>All Books</title>
+</head>
+<body>
+<div th:each="book: ${books}">
+  <a th:text="${book.title}+ ' - ' +${book.author}" th:href="@{/books/{id}(id=${book.id})}"></a>
+   <a th:href="@{/books/delete/{id}(id=${book.id})}"><i class="fa-solid fa-trash"></i></a>
+    <a th:href="@{/books/edit/{id}(id=${book.id})}"><i class="fa-solid fa-pen-to-square"></i></a>
+</div>
+
+
+<script src="https://kit.fontawesome.com/f280ff59d1.js" crossorigin="anonymous"></script>
+</body>
+</html>

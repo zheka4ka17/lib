@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My room</title>
+</head>
+<body>
+<p th:text="'Username - '+${person.username}"></p></br>
+<p th:text="'Имя  - '+${person.name}"></p></br>
+<p th:text="'Фамилия- '+${person.surname}"></p></br>
+<p th:text="'Адресс - '+${person.address}"></p></br>
+<p th:text="'Номер телефона  - '+${person.phoneNumber}"></p></br>
+
+<a th:href="@{/person/edit/{id}/(id=${person.id})}">Редактировать</a>
+
+<h2>Книги у меня</h2>
+<div th:each="book :${books}">
+    <p th:text="${book.title}+ ' ' +${book.author}"></p>
+    <a th:href="@{/person/delete-book/{id}(id=${book.id})}">Вернуть книгу</a>
+</div>  </br>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+</head>
+<body>
+<p th:text="'ISBN - '+${book.ISBN}"></p></br>
+<p th:text="'Название книги  - '+${book.title}"></p></br>
+<p th:text="'Имя автора - '+${book.author}"></p></br>
+<p th:text="'Описание - '+${book.description}"></p></br>
+<p th:text="'Жанр  - '+${book.getGenre()}"></p></br>
+<p th:text="'Создана - '+${book.created}"></p></br>
+<p th:text="'Обновлена(отдана/возращена) - '+${book.updated}"></p></br>
+
+<div th:if="${available}">
+    <p>Доступна</p>
+</div>
+<div th:if="${not_available}">
+    <p>Недоступна</p>
+</div>
+<a th:href="@{/books/delete/{id}(id=${book.id})}"><i class="fa-solid fa-trash"></i></a>
+<a th:href="@{/books/edit/{id}(id=${book.id})}"><i class="fa-solid fa-pen-to-square"></i></a>
+
+
+<script src="https://kit.fontawesome.com/f280ff59d1.js" crossorigin="anonymous"></script>
+</body>
+</html>

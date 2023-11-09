@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Search</title>
+</head>
+<body>
+
+
+<form th:method="POST" th:action="@{/books/search}">
+  <label for="query">Введите id  или ISBN: </label>
+  <input type="text" id="query" name="query"/>
+  <br/>
+  <input type="submit" value="Искать!"/>
+</form>
+
+<div th:if="${book}">
+  <p th:text="${book.title}"></p>
+    <div th:if="${available}">
+    <a  th:href="@{/books/add-book/{id}(id=${book.id})}">Взять книгу</a>
+</div>
+</div>
+
+</body>
+</html>
